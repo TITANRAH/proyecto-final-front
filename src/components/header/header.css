@@ -1,0 +1,35 @@
+.form-cont-header {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cont-img-header{
+
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    display: flex;
+}
+
+.form-img-header{
+
+    width: 100%;
+    height: 100%;
+    opacity: 0, 1;
+    filter: brightness(0.4);
+
+
+}
+
+.form-cont-texto{
+
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(7, 7, 7);
+    margin: 5vh 0 0 0;
+
+}

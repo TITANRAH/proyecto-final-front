@@ -1,0 +1,115 @@
+.active {
+
+    color: white;
+    margin: 2vh;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.form-cont-navbar {
+
+    height: 12vh;
+    background-color: rgb(90, 233, 114);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 100%;
+
+}
+
+.form-cont-nombre {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-cont-img-logo{
+
+    width: 8vh;
+    height: 8h;
+    /* margin: 0 0 0 15vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.form-tit-navbar{
+
+    font-size: x-large;
+}
+
+.form-img-navbar {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.form-cont-login{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.form-cont-registro{
+
+    align-items: center;
+    display: flex;
+
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 7vh 0 0;
+    
+}
+
+.form-cont-carrito {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-cont-img-carrito {
+
+    width: 8vh;
+    height: 8h;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1vh 0 0;
+
+}
+
+@media (max-width: 991px){
+
+    .form-cont-navbar {
+
+        height: 15vh;
+    
+    }
+
+    .form-tit-navbar{
+
+        font-size: large;
+    }
+
+    .form-cont-img-pizza {
+
+        width: 13vh;
+        height: 10h;  
+    
+    }
+
+}

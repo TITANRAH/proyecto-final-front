@@ -1,14 +1,43 @@
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './App.css';
+import Context from "../src/contex/Contex.jsx";
+import Navbar from "../src/components/navbar/navbar.jsx"
+import Home from "./views/home/home.jsx"
 
 function App() {
+
+  const [producto, setProducto] = useState([]);
+  const sharedState = { producto, setProducto};
+
+  const consultarJson = async () => {
+
+    const endpoint = "servicios"
+    const url = `https://proyecto-final-back-production-045b.up.railway.app/${endpoint}`
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log(data)
+    setProducto(data)
+
+  }
+
+  useEffect(() => {
+
+    consultarJson()
+
+  }, [])
+
   return (
-   <>
-   <div>
-      <h2>HOLA</h2>
-      <h3>Agregando un H3</h3>
+    <div className="App">
+      <Context.Provider value={sharedState}>
+        <BrowserRouter>
+          <Navbar/>
+          <Routes>
+            <Route path="/"  element={<Home/>}/>
+          </Routes>
+        </BrowserRouter>
+      </Context.Provider>
     </div>
-   </>
   );
 }
 
