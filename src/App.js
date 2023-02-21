@@ -7,8 +7,8 @@ import Home from "./views/home/home.jsx"
 
 function App() {
 
-  const [producto, setProducto] = useState([]);
-  const sharedState = { producto, setProducto};
+  const [servicio, setServicio] = useState([]);
+  const sharedState = { servicio, setServicio};
 
   const consultarJson = async () => {
 
@@ -17,7 +17,7 @@ function App() {
     const response = await fetch(url)
     const data = await response.json()
     console.log(data)
-    setProducto(data)
+    setServicio(data)
 
   }
 
