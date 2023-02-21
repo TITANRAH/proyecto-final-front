@@ -15,7 +15,6 @@ export default function Galeria(props) {
     const { servicio } = useContext(Context);
     
     return (
-
         <div className='form-cont-productos '>
             <Row xs={1} sm={1} md={2} lg={3} className="g-4">
                 {servicio.map((e) => (
